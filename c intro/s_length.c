@@ -1,9 +1,15 @@
 #include <stdio.h>
 
+int string_length(string s);
+
 int main(void)
 {
-    string name = "dodovlski"
+    string name = "dodovlski" int length = string_length(name);
+    printf("%i\n", length)
+}
 
+int string_length(string s)
+{
     int n = 0;
 
     while (name[n] != '\0')
@@ -11,5 +17,5 @@ int main(void)
 
         n++;
     }
-    printf("%i\n", n);
+    return n;
 }
